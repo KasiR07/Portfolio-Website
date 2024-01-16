@@ -4,7 +4,7 @@
 
 # About Me
 
-![image](https://github.com/KasiR07/Portfolio-Website/assets/108777263/6cb4c473-388a-42e4-b549-4dc70e07b6a2)
+![image](https://github.com/KasiR07/Portfolio-Website/assets/108777263/3683884c-f9f0-43b0-b5ec-292903b7eb21)
 
 
 # My Skills
