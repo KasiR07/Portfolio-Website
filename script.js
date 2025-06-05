@@ -36,9 +36,10 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*================= Typed.js =============*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Data Analyst', 'Data Engineer', 'Business Analyst', 'Web Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
+  strings: ['Data Analyst', 'Business Analyst', 'Data Engineer', 'Web Developer'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
 });
+
