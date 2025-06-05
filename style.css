@@ -433,3 +433,7 @@ span {
         margin: 3rem 0;
     }
 }
+.typed-cursor {
+  color: #00ffff; /* Neon blue like your theme */
+  font-weight: bold;
+}
