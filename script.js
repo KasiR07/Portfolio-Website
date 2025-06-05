@@ -1,4 +1,4 @@
-let section =  document.querySelectorAll('section');
+let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
@@ -6,43 +6,39 @@ window.onscroll = () => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
-        let id  = sec.getAttributes('id');
+        let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-
             });
-        };
+        }
     });
-    /*================= Sticky NavBar =============*/
-    let header = document.querySelector('header');
 
+    // Sticky Navbar
+    let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 };
 
- /*================= Scroll Reveal =============*/
+/*================= Scroll Reveal =============*/
 ScrollReveal({
-   // reset: true,
+    // reset: true,
     distance: '80px',
     duration: 2000,
-    delay: 200, 
+    delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
- /*================= typed js =============*/
+/*================= Typed.js =============*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Data Analyst', 'Web Developer', 'UI/UX Designer'],
+    strings: ['Data Analyst', 'Data Engineer', 'Business Analyst', 'Web Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
-
-    
-
