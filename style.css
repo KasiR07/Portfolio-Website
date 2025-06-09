@@ -254,11 +254,14 @@ span {
 
 .portfolio-container .portfolio-box {
     position: relative;
+    width: 400px;
+    height: 250px;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
+
 
 .portfolio-box img {
     width: 100%;  
